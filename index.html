@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Map</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <style>body {
+    background: #eef2f7;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    color: #222;
+}
+
+h1 {
+    text-align: center;
+    color: #003366;
+}
+
+.map-image {
+    width: 100%;
+    max-width: 900px;
+    display: block;
+    margin: auto;
+    border: 4px solid #003366;
+}
+
+.article-container {
+    display: flex;
+    gap: 25px;
+    margin-top: 2px;
+}
+
+.article-container img {
+    width: 45%;
+    border-radius: 10px;
+}
+
+.content-box {
+    flex: 1;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+td, th {
+    border: 1px solid #003366;
+    padding: 8px;
+}
+
+a {
+    color: #0044aa;
+}</style>
+
+<h1> Map</h1>
+
+<!-- MAP IMAGE -->
+<img src="map.png"
+     usemap="#usmap"
+     alt="United States Map"
+     class="map-image">
+
+<!-- CLICKABLE MAP AREAS -->
+<map name="usmap">
+
+    <!-- California -->
+    <area shape="poly"
+          coords="77,308, 120,244, 150,230, 183,265, 163,335, 105,344"
+          href="california.html"
+          alt="California">
+
+    <!-- Texas -->
+    <area shape="poly"
+          coords="335,375, 380,350, 425,360, 460,395, 420,435, 350,420"
+          href="texas.html"
+          alt="Texas">
+
+    <!-- Florida -->
+    <area shape="poly"
+          coords="610,420, 650,390, 690,430, 715,470, 690,500, 655,455"
+          href="florida.html"
+          alt="Florida">
+
+    <!-- New York -->
+    <area shape="poly"
+          coords="720,160, 745,150, 770,165, 765,185, 730,195"
+          href="newyork.html"
+          alt="New York">
+
+    <!-- Washington -->
+    <area shape="poly"
+          coords="119,83, 315,88, 225,78, 213,96, 219 "
+          href="washington.html"
+          alt="Washington">
+
+</map>
+
+</body>
+</html>
